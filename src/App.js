@@ -1,10 +1,9 @@
-function App() {
-  return (
-    <div className="App">
-     <h1>Hello World!</h1>
-     <h1>React Started </h1>
-    </div>
-  );
+class Car {
+  constructor(Cars) {
+    this.brand = Cars;
+    } 
 }
+const mycar = new Car("Ford");
+document.write(mycar.brand);
 
-export default App;
+

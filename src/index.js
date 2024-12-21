@@ -1,8 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-const myFirstElement = <h1>Hello React!</h1>
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myFirstElement);
+class Car {
+  constructor(Cars) {
+    this.brand = Cars;
+    } 
+    present(){
+        return 'I have a' + this.brand;
+    }
+}
+const mycar = new Car("Ford");
+document.write(mycar.present);
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
